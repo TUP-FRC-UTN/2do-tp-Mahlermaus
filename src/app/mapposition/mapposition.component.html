@@ -1,0 +1,23 @@
+<form>
+    <div class="mb-3">
+        <label class="form-label">
+            Zoom:
+        </label>
+
+        <input (change)="notify.emit($event)" name="zoom" type="number" value="2" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">
+            Latitud :
+        </label>
+        <input (change)="notify.emit($event)" name="lat" type="number" value="0" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">
+            Longitud :
+        </label>
+        <input (change)="notify.emit($event)" name="lng" type="number" value="0" class="form-control" />
+    </div>
+
+
+</form>
